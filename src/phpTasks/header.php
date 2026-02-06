@@ -2,7 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title><?php echo isset($title) ? $title : "My Website"; ?></title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title><?php echo isset($title) ? $title : "My Website"; ?></title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -22,6 +24,7 @@
             list-style: none;
             padding: 0;
             display: flex;
+            flex-wrap: wrap; /* Added wrap for mobile navigation */
             justify-content: center;
             background: #444;
             margin: 0;
