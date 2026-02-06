@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHP Bootstrap Table</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+    <?php
+    echo "<h4 class='text-secondary'>PHP is interesting.</h4>";
+    echo "<h3 class='mb-4'>Hello world! My name is <span class='text-primary'>'David'</span></h3>";
+
+    $g1 = 5;
+    $g2 = 4;
+    $g3 = 5;
+    ?>
+            <table class="table table-striped table-hover table-bordered">
+        <thead class="table-dark">
+            <tr>
+                <th>S.n</th>
+                <th>Name</th>
+                <th>Grade</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>John</td>
+                <td><?php echo $g1; ?></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Alice</td>
+                <td><?php echo $g2; ?></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Bob</td>
+                <td><?php echo $g3; ?></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="mt-4">
+        <img class="img-fluid rounded shadow" src="./Screenshot (1).png" alt="Screenshot" style="max-width: 700px;">
+    </div>
+    </div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
